@@ -29,6 +29,12 @@ let transporter = nodemailer.createTransport({
 })
 
 let contactSendMail = (req, res) => {
+    {
+        console.log('Success')
+
+        return res.status(200).send(success)
+    }
+    
     let timestamp = new Date()
     let ipAddr = req.ip
     let email = req.body.email || ""
@@ -81,6 +87,12 @@ let handleHtml = (req, res) => {
 }
 
 let newsletterSubscribe = (req, res) => {
+    {
+        console.log('Success')
+
+        return res.status(200).send(success)
+    }
+
     let email = req.body.email
 
     console.log(email)
@@ -111,6 +123,12 @@ let newsletterSubscribe = (req, res) => {
 }
 
 let songUpload = (req, res) => {
+    {
+        console.log('Success')
+
+        return res.status(200).send(success)
+    }
+
     let uploadName = path.parse(req.file.originalname).name
     let timestamp = new Date()
     let ipAddr = req.ip

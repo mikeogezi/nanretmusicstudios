@@ -56,9 +56,7 @@ app.set('twitter share', 'https://twitter.com/home?status=')
 app.use(routes.songDownload)
 app.use(express.static(path.join(__dirname + '/public')))
 app.use(bodyParser.json())
-app.use(favicon(path.join(__dirname, '/public/images/logo_v2.ico'), {
-    maxAge: ms('1m')
-}))
+app.use(favicon(path.join(__dirname, '/public/images/logo_v2.ico')))
 app.use(stylus.middleware({
     src: path.join(__dirname, '/public'),
     compile: compile
