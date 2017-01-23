@@ -91,6 +91,6 @@ app.get('/:view', views.resolveView)
 
 app.locals.pretty = true
 
-app.listen(app.get('port'), () => {
-    console.log(`Listening or port ${app.get('port')}`)
+app.listen(process.env.PORT, () => {
+    console.log(`Listening or port ${process.env.PORT}`)
 })
