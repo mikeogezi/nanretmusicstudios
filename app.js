@@ -94,11 +94,3 @@ app.locals.pretty = true
 app.listen(app.get('port'), () => {
     console.log(`Listening or port ${app.get('port')}`)
 })
-
-/*
-RangeNotSatisfiableError: Range Not Satisfiable
-    at SendStream.error (/home/michael/Documents/company_projects/nanret_music_studios/nanretmusicstudios/node_modules/send/index.js:275:31)
-    at SendStream.send (/home/michael/Documents/company_projects/nanret_music_studios/nanretmusicstudios/node_modules/send/index.js:618:19)
-    at onstat (/home/michael/Documents/company_projects/nanret_music_studios/nanretmusicstudios/node_modules/send/index.js:677:10)
-    at FSReqWrap.oncomplete (fs.js:111:15)
-*/
