@@ -91,6 +91,6 @@ app.get('/:view', views.resolveView)
 
 app.locals.pretty = true
 
-app.listen(app.get('port'), () => {
+app.listen(app.get('port') || 3000, () => {
     console.log(`Listening or port ${app.get('port')}`)
 })
