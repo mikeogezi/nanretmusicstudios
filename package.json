@@ -4,7 +4,7 @@
   "private": "true",
   "main": "app.js",
   "scripts": {
-    "start": "EMAIL_ADDR=michaelogezi@outlook.com EMAIL_PASS=topdogg node app.js"
+    "start": "NODE_ENV=development EMAIL_ADDR=michaelogezi@outlook.com EMAIL_PASS=topdogg node app.js"
   },
   "dependencies": {
     "body-parser": "1.15.2",
@@ -15,9 +15,5 @@
     "pug": "2.0.0-beta6",
     "serve-favicon": "2.3.2",
     "stylus": "0.54.5"
-  },
-  "engines": {
-    "node": "7.3.0",
-    "npm": "3.10.10"
   }
 }
