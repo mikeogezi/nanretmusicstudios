@@ -2,7 +2,7 @@
     "name": "Nanret Music Studios Website",
     "description": "Website for Nanret Music Studios",
     "repository": "https://github.com/okibeogezi/nanretmusicstudios",
-    "logo": "https://raw.githubusercontent.com/okibeogezi/nanretmusicstudios/master/public/images/logo.jpg",
+    "logo": "https://raw.githubusercontent.com/okibeogezi/nanretmusicstudios/master/public/images/logo_v2.png",
     "keywords": ["Nanret Music Studios", "Music Studio", "Record Label", "Nodejs"],
     "image": "heroku/nodejs"
 }
