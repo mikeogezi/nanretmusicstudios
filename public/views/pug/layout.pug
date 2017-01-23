@@ -1,0 +1,120 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0,maximum-scale=1')
+    title #{title}
+
+    include stylesheets
+
+  body
+    #site-content
+      header.site-header
+        .container
+          a#branding(href='/')
+            img(src='images/logo_v2.png', width=64, height=64, alt='Site Title')
+            small.site-description Where Lyrical Legends Are Made
+          nav.main-navigation
+            button.toggle-menu(type='button')
+              i.fa.fa-bars
+            ul.menu
+              if view == 'index'
+                  li.menu-item.current-menu-item
+                    a(href='/') Home
+              else
+                  li.menu-item
+                    a(href='/') Home
+
+              if view == 'about'
+                  li.menu-item.current-menu-item
+                    a(href='about') About
+              else
+                  li.menu-item
+                    a(href='about') About
+
+              if view == 'gallery'
+                  li.menu-item.current-menu-item
+                    a(href='gallery') Gallery
+              else
+                  li.menu-item
+                    a(href='gallery') Gallery
+
+              if view == 'download'
+                  li.menu-item.current-menu-item
+                    a(href='download') Download
+              else
+                  li.menu-item
+                    a(href='download') Download
+
+              if view == 'tickets'
+                  li.menu-item.current-menu-item
+                    a(href='tickets') Tickets
+              else
+                  li.menu-item
+                    a(href='tickets') Tickets
+
+              if view == 'upload'
+                  li.menu-item.current-menu-item
+                    a(href='upload') Upload
+              else
+                  li.menu-item
+                    a(href='upload') Upload
+
+              if view == 'blog'
+                  li.menu-item.current-menu-item
+                    a(href='blog') Blog
+              else
+                  li.menu-item
+                    a(href='blog') Blog
+
+              if view == 'contact'
+                  li.menu-item.current-menu-item
+                    a(href='contact') Contact
+              else
+                  li.menu-item
+                    a(href='contact') Contact
+
+          .mobile-menu
+
+      block content
+
+      footer.site-footer
+        .container
+          img(src='images/logo_v2-footer.png', width=64, height=64, alt='Site Name')
+          address
+            p
+              | #{addrOne}
+              br
+              | #{addrTwo}
+              br
+              a(href='tel:' + phoneHref) #{phone}
+              br
+              a(href='mailto:' + email) #{email}
+          #scroll-after-post.ns
+          #sendingmessage.ns Sending...
+          #notsentmessage.ns You didn't fill the form properly
+          #errormessage.ns You couldn't be added to the newsletter
+          #sendmessage.ns You were successfully added to the newsletter
+          form.newsletter-form(action='/newsletter', method='post', role='form')
+            input(type='email', id='email', name='email', required='required', placeholder='Enter your email to join newsletter')
+            input.button.cut-corner(type='submit', value='Subscribe')
+          .social-links
+            a(href='https://facebook.com/' + handle)
+              i.fa.fa-facebook-square
+            a(href='https://twitter.com/' + handle)
+              i.fa.fa-twitter
+            a(href='https://plus.google.com/' + handle)
+              i.fa.fa-google-plus
+            a(href='https://pinterest.com/' + handle)
+              i.fa.fa-pinterest
+          p.copy
+            | © #{year} #{company}. Designed with&nbsp;
+            i.fa.fa-heart.love
+            |  by&nbsp;
+            a(href=designerPersonSite) #{designerPerson}
+            |  from&nbsp;
+            a(href=designerCompanySite) #{designerCompany}
+            | .&nbsp;All right reserved
+
+          include scripts

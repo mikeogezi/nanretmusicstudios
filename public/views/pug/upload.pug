@@ -1,0 +1,30 @@
+extends layout
+
+block content
+      main.main-content
+        .fullwidth-block.inner-content
+          .container
+            h2.page-title Upload Your Music
+            .row
+              .col-md-6
+                #scroll-after-post
+                #sendingmessage Sending...
+                #notsentmessage You didn't fill the form properly
+                #errormessage Your song couldn't be uploaded
+                #sendmessage Your song was uploaded successfully
+                form.upload-form(action='/upload', enctype='multipart/form-data', method='post', role='form')
+                  input(type='text', id='name', required='required', name='name', placeholder='Full Name')
+                  input(type='text', id='stage_name', name='stage_name', placeholder='Stage Name')
+                  input(type='email', id='email', required='required', name='email', placeholder='Email Address')
+                  input(type='text', id='website', name='website', placeholder='Website (If Any)')
+                  textarea(name='message', id='message', placeholder='Message For Us (If Any)')
+                  br
+                  hr
+                  br
+                  input(type='text', id='song_name', name='song_name', required='required', placeholder='Song Name')
+                  input(type='file', id='song', name='song', accept='audio/*', required='required')
+                  input.button.cut-corner(type='submit', value='Upload Song')
+              .col-md-6
+                .map-wrapper
+                  address
+                    include address

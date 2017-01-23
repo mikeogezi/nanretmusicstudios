@@ -1,0 +1,82 @@
+extends layout
+
+block content
+      .hero
+        .slider
+          ul.slides
+            li.lazy-bg(data-background='images/slide-1.jpg')
+              .container
+                h2.slide-title #{company}
+                h3.slide-subtitle Where Lyrical Legends Are Made
+                p.slide-desc
+                  | At #{company} we free our artists to create good music while removing the difficulty and complexity of doing so.
+                a.button.cut-corner(href='about') Read More
+            li.lazy-bg(data-background='images/slide-2.jpg')
+              .container
+                h2.slide-title #{company}
+                h3.slide-subtitle Where Lyrical Legends Are Made
+                p.slide-desc
+                  | We want you to be the best artist you can be and we want your fans to fall in love with your music.
+                a.button.cut-corner(href='about') Read More
+            li.lazy-bg(data-background='images/slide-3.jpg')
+              .container
+                h2.slide-title #{company}
+                h3.slide-subtitle Where Lyrical Legends Are Made
+                p.slide-desc
+                  | Great artists aren't just born they are made at #{company}.
+                a.button.cut-corner(href='about') Read More
+      main.main-content
+        .fullwidth-block.testimonial-section
+          .container
+            .quote-slider
+              ul.slides
+                li
+                  blockquote
+                    p
+                      | &quot;We at #{company}, saw that a lot of artists were being exploited by bad record labels. We didn't like that and I founded #{company} to change that.&quot;
+                    cite #{founder}
+                    span #{company} CEO
+                li
+                  blockquote
+                    p
+                      | &quot;I believe that artists should be allowed to make their music freely. I also believe that they should spend their time making music instead of focusing on mundane issues like concert planning and sponsorship deals. #{company} was started as a marriage of both.&quot;
+                    cite #{founder}
+                    span #{company} CEO
+
+        .fullwidth-block.upcoming-event-section(data-bg-color='#191919')
+          .container
+
+            include events
+
+        .fullwidth-block.why-chooseus-section
+          .container
+            h2.section-title Why choose us?
+            .row
+
+              .col-md-4
+                .feature
+                  figure.cut-corner
+                    img(src='images/make-beats.jpg', alt='')
+                  h3.feature-title We provide state of the art musical equipment and facilities
+                  p
+                    | At #{company} since we are looking for the artists with the greatest potential, we have invested and continue to invest in top of the line musical equipment and facilities to bring out the best in our artists.
+
+              .col-md-4
+                .feature
+                  figure.cut-corner
+                    img(src='images/standing-mic.jpg', alt='')
+                  h3.feature-title We provide easy access to our equipment
+                  p
+                    | Since our artists aren't always singing or making music. We allow artists that are not signed to us to use our facilities and equipment at very affordable prices. You can contact us&nbsp;
+                    a.why-chooseus-section-link(href='contact') here
+                    | .
+
+              .col-md-4
+                .feature
+                  figure.cut-corner
+                    img(src='images/ice-prince.jpg', alt='')
+                  h3.feature-title We allow aspiring artists to easily audition to get a contract
+                  p
+                    | We know first hand that it can be difficult to get a record deal. That is why we allow artists with great potential who haven't gotten their break out moment yet to upload their songs on our website. If we like your song we will contact you and go from there. You can upload your music&nbsp;
+                    a.why-chooseus-section-link(href='upload') here
+                    |  to allow us to hear it.

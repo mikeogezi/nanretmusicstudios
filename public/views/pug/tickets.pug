@@ -1,0 +1,42 @@
+extends layout
+
+block content
+      main.main-content
+        .fullwidth-block.gallery
+          .container
+            .content.fullwidth
+                h2.entry-title Concert tickets
+                p
+                  | You can get tickets for all #{company} shows at&nbsp;
+                  a.why-chooseus-section-link(href='https://ticketmate.com/' + handle) ticketmate.com/#{handle}
+                  | .
+                .filter-links.filterable-nav
+                  select.mobile-filter
+                    option(value='*') Show all
+                    option(value='.concert') Concerts
+                    option(value='.band') Artists
+                    option(value='.stuff') Stuff
+                  a.current(href='#', data-filter='*') Show all
+                  a(href='#', data-filter='.concert-1') Lagos Concert
+                  a(href='#', data-filter='.concert-2') Jos Concert
+                  a(href='#', data-filter='.concert-3') Abuja Concert
+                  a(href='#', data-filter='.concert-4') Port Harcourt Concert
+                .filterable-items
+                  .filterable-item.concert-1
+                    a(href='images/concert_1.jpg')
+                      figure
+                        img(src='images/concert_1.jpg', alt='tickets 1')
+                  .filterable-item.concert-2
+                    a(href='images/concert_2.jpg')
+                      figure
+                        img(src='images/concert_2.jpg', alt='tickets 2')
+                  .filterable-item.concert-3
+                    a(href='images/concert_3.jpg')
+                      figure
+                        img(src='images/concert_3.jpg', alt='tickets 3')
+                  .filterable-item.concert-4
+                    a(href='images/concert_4.jpg')
+                      figure
+                        img(src='images/concert_4.jpg', alt='tickets 4')
+
+            include events

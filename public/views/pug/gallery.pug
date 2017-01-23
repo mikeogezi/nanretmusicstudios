@@ -1,0 +1,67 @@
+extends layout
+
+block content
+      main.main-content
+        .fullwidth-block.gallery
+          .container
+            .content.fullwidth
+              h2.entry-title Gallery
+              .filter-links.filterable-nav
+                select.mobile-filter
+                  option(value='*') Show all
+                  option(value='.concert') Concerts
+                  option(value='.band') Artists
+                  option(value='.stuff') Stuff
+                a.current(href='#', data-filter='*') Show all
+                a(href='#', data-filter='.concert') Concerts
+                a(href='#', data-filter='.band') Artists
+                a(href='#', data-filter='.stuff') Stuff
+              .filterable-items
+                .filterable-item.concert
+                  a(href='images/concert_3.jpg')
+                    figure
+                      img(src='images/concert_3.jpg', alt='gallery 2')
+                .filterable-item.stuff
+                  a(href='images/make-beats.jpg')
+                    figure
+                      img(src='images/make-beats.jpg', alt='gallery 3')
+                .filterable-item.concert
+                  a(href='images/concert_4.jpg')
+                    figure
+                      img(src='images/concert_4.jpg', alt='gallery 4')
+                .filterable-item.band
+                  a(href='images/jesse-jagz.jpg')
+                    figure
+                      img(src='images/jesse-jagz.jpg', alt='gallery 5')
+                .filterable-item.stuff
+                  a(href='images/standing-mic.jpg')
+                    figure
+                      img(src='images/standing-mic.jpg', alt='gallery 6')
+                .filterable-item.concert
+                  a(href='images/concert_1.jpg')
+                    figure
+                      img(src='images/concert_1.jpg', alt='gallery 7')
+                .filterable-item.band
+                  a(href='images/ice-prince.jpg')
+                    figure
+                      img(src='images/ice-prince.jpg', alt='gallery 8')
+                .filterable-item.band
+                  a(href='images/tu-face.jpg')
+                    figure
+                      img(src='images/tu-face.jpg', alt='gallery 9')
+                .filterable-item.stuff
+                  a(href='images/mic_2.jpg')
+                    figure
+                      img(src='images/mic_2.jpg', alt='gallery 10')
+                .filterable-item.band
+                  a(href='images/solid-star.jpg')
+                    figure
+                      img(src='images/solid-star.jpg', alt='gallery 11')
+                .filterable-item.stuff
+                  a(href='images/trumpet.jpg')
+                    figure
+                      img(src='images/trumpet.jpg', alt='gallery 12')
+                .filterable-item.concert
+                  a(href='images/concert_2.jpg')
+                    figure
+                      img(src='images/concert_2.jpg', alt='gallery 1')

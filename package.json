@@ -1,0 +1,19 @@
+{
+  "name": "Nanret-Music-Studios-Website",
+  "version": "1.0.0",
+  "private": "true",
+  "main": "app.js",
+  "scripts": {
+    "start": "EMAIL_ADDR=michaelogezi@outlook.com EMAIL_PASS=topdogg node app.js"
+  },
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "cookie-parser": "1.4.3",
+    "express": "4.14.0",
+    "nib": "1.1.2",
+    "nodemailer": "2.7.0",
+    "pug": "2.0.0-beta6",
+    "serve-favicon": "2.3.2",
+    "stylus": "0.54.5"
+  }
+}

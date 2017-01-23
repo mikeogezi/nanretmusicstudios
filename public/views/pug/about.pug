@@ -1,0 +1,24 @@
+extends layout
+
+block content
+      main.main-content
+        .fullwidth-block.inner-content
+          .container
+            .row
+              .col-md-7
+                .content
+                  h2.entry-title Our History
+                  figure.featured-image
+                    img(src='images/mic_2.jpg', alt='post image')
+                  p.leading
+                    | #{company} was founded in Jos, Plateau in 2016 as the brain child of #{founder}. #{founder} started #{company} in order make it easier for artists big or small to just put their music out their and allow their fans to consume it. #{founder} had been a music industry veteran and was especially disappointed with the service given to artists when he tried to become an artist full time.
+                  p
+                    | #{company} is located at #{addrOne} in #{addrTwo}. #{company} has been years in the making and we have finally put it out there. We are ready to make a bog splash in the music industry and will readily take any talented artists that want to go with us on our epic journey.
+                  p
+                    | Life is short. If you are an artist #{company} is the place for you to be at.
+              .col-md-4.col-md-push-1
+                aside.sidebar
+                  .widget
+                    h3.widget-title Discography
+
+                    include discography
