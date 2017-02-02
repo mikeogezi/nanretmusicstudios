@@ -4,7 +4,7 @@
   "private": "true",
   "main": "app.js",
   "scripts": {
-    "start": "NODE_ENV=development EMAIL_ADDR=michaelogezi@outlook.com EMAIL_PASS=topdogg node app.js"
+    "start": "NODE_ENV=development EMAIL_ADDR=aver.emmanuel@yahoo.com EMAIL_PASS=Physics2014 node app.js"
   },
   "dependencies": {
     "body-parser": "1.15.2",
